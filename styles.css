@@ -18,7 +18,7 @@ body {
 }
 
 .card {
-  max-width: 500px;
+  max-width: 340px;
   margin: auto;
   overflow-y: auto;
   position: relative;
@@ -33,22 +33,22 @@ body {
 }
 
 .card[data-state="#about"] {
-  height: 700px;
+  height: 500px;
 }
 .card[data-state="#about"] .card-main {
   padding-top: 0;
 }
 
 .card[data-state="#contact"] {
-  height: 650px;
+  height: 500px;
 }
 
 .card[data-state="#experience"] {
-  height: 700px;
+  height: 500px;
 }
 
 .card.is-active .card-header {
-  height: 150px;
+  height: 100px;
 }
 .card.is-active .card-cover {
   height: 100px;
@@ -60,8 +60,8 @@ body {
   width: 50px;
   height: 50px;
   bottom: 10px;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
 .card.is-active .card-fullname,
 .card.is-active .card-jobtitle {
@@ -71,19 +71,19 @@ body {
 .card.is-active .card-fullname {
   bottom: 40px;
   left: 130px;
-  font-size: 30px;
+  font-size: 20px;
 }
 .card.is-active .card-jobtitle {
   bottom: 30px;
   left: 140px;
   letter-spacing: 1px;
-  font-size: 18px;
+  font-size: 12px;
 }
 
 .card-header {
   position: relative;
   display: flex;
-  height: 300px;
+  height: 250px;
   flex-shrink: 0;
   width: 100%;
   transition: 0.3s;
@@ -107,8 +107,8 @@ body {
 }
 
 .card-avatar {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
   border-radius: 50%;
   -o-object-position: center;
@@ -124,7 +124,7 @@ body {
 .card-fullname {
   position: absolute;
   bottom: 0;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
   text-align: center;
   white-space: nowrap;
@@ -135,7 +135,7 @@ body {
 .card-jobtitle {
   position: absolute;
   bottom: 0;
-  font-size: 20px;
+  font-size: 15px;
   white-space: nowrap;
   font-weight: 500;
   opacity: 0.7;
@@ -156,18 +156,18 @@ body {
 
 .card-subtitle {
   font-weight: 700;
-  font-size: 30px;
+  font-size: 20px;
   margin-bottom: 8px;
 }
 
 .card-content {
-  padding: 20px;
+  padding: 10px;
 }
 
 .card-desc {
   line-height: 1.6;
   color: #636b6f;
-  font-size: 22px;
+  font-size: 17px;
   margin: 0;
   font-weight: 400;
   font-family: "DM Sans", sans-serif;
@@ -181,7 +181,7 @@ body {
 }
 .card-social svg {
   fill: #a5b5ce;
-  width: 30px;
+  width: 25px;
   display: block;
   transition: 0.3s;
 }
@@ -306,12 +306,12 @@ body {
 
 .card-item-title {
   font-weight: 500;
-  font-size: 28px;
+  font-size: 22px;
   margin-bottom: 5px;
 }
 
 .card-item-desc {
-  font-size: 23px;
+  font-size: 20px;
   color: #6f6f7b;
   line-height: 1.5;
   font-family: "DM Sans", sans-serif;
@@ -324,7 +324,7 @@ body {
 .card-contact {
   display: flex;
   align-items: center;
-  font-size: 25px;
+  font-size: 20px;
   color: #6f6f7b;
   font-family: "DM Sans", sans-serif;
   line-height: 1.6;
@@ -354,7 +354,7 @@ body {
   border-radius: 5px;
   margin-top: 25px;
   cursor: pointer;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 500;
   font-family: "Jost", sans-serif;
   transition: 0.3s;
