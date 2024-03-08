@@ -4,14 +4,29 @@
     <title>Profile Card</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <style>
+      body {
+        color: #2b2c48;
+        font-family: "Jost", sans-serif;
+        background-image: url(./assets/images/429003334_870011011542171_534638378464329171_n.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        min-height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+      }
+    </style>
 
   </head>
   <body>
   <div class="card" data-state="#about">
   <div class="card-header">
-    <div class="card-cover" style="background-image: url('429003334_870011011542171_534638378464329171_n.jpg')"></div>
-    <img class="card-avatar" src="428958466_3730574147186338_442834476829487377_n.jpg" alt="avatar" />
+    <div class="card-cover" style="background-image: url('./assets/images/429003334_870011011542171_534638378464329171_n.jpg')"></div>
+    <img class="card-avatar" src="./assets/images/428958466_3730574147186338_442834476829487377_n.jpg" alt="avatar" />
     <h1 class="card-fullname">Nguyen Tien Luan</h1>
     <h2 class="card-jobtitle">Third-year student</h2>
   </div>
@@ -19,10 +34,26 @@
     <div class="card-section is-active" id="about">
       <div class="card-content">
         <div class="card-subtitle">ABOUT</div>
-        <p class="card-desc">studying computer engineering at International University - VNU HCM
-        </p>
-        <p class = "card-desc">Sport: futsal, volleyball.</p>
-        <p class="card-desc">Music: piano, guitar.</p>
+        <div class="card-heading">
+          MAJOR
+          <p class="card-desc">Computer Engineering
+          </p>
+        </div>
+        <div class="card-heading">
+          UNIVERSITY
+          <p class="card-desc">International University - VNU HCM
+          </p>
+        </div>
+        <div class="card-heading">
+          LANGUAGE
+          <p class="card-desc">Vietnamese, English
+          </p>
+        </div>
+        <div class="card-heading">
+          HOBBIES
+          <p class="card-desc">Sports:Futsal, Volleyball</p>
+          <p class="card-desc">Music: Piano, Guitar</p>
+        </div>
       </div>  
       <div class="card-social">
         <a href="https://www.facebook.com/tienluan.nguyen.165"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -38,12 +69,12 @@
         </a>
       </div>
     </div>
-    <div class="card-section" id="experience">
+    <div class="card-section" id="project">
       <div class="card-content">
-        <div class="card-subtitle">EXPERIENCE - PROJECT</div>
+        <div class="card-subtitle">PROJECT</div>
         <div class="card-timeline">
           <div class="card-item" data-year="2022">
-            <div class="card-item-title"> Platformer game project <span>Objec-oriented Programing</span></div>
+            <div class="card-item-title"> Platformer game project <span>Object-oriented Programing</span></div>
             <div class="card-item-desc">Use Java to build the game.</div>
           </div>
           <div class="card-item" data-year="2023">
@@ -80,11 +111,12 @@
     </div>
     <div class="card-buttons">
       <button data-section="#about" class="is-active">ABOUT</button>
+      <button data-section="#project">PROJECT</button>
       <button data-section="#experience">EXPERIENCE</button>
       <button data-section="#contact">CONTACT</button>
     </div>
   </div>
 </div>
-    <script src="script.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>

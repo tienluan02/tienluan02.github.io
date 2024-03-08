@@ -3,22 +3,8 @@
   box-sizing: border-box;
 }
 
-body {
-  color: #2b2c48;
-  font-family: "Jost", sans-serif;
-  background-image: url(429003334_870011011542171_534638378464329171_n.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  min-height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 20px;
-}
-
 .card {
-  max-width: 340px;
+  max-width: 1000px;
   margin: auto;
   overflow-y: auto;
   position: relative;
@@ -34,12 +20,18 @@ body {
 
 .card[data-state="#about"] {
   height: 500px;
+  width: 380px;
 }
 .card[data-state="#about"] .card-main {
   padding-top: 0;
 }
 
 .card[data-state="#contact"] {
+  height: 500px;
+  width: 400px;
+}
+
+.card[data-state="#project"] {
   height: 500px;
 }
 
@@ -160,6 +152,12 @@ body {
   margin-bottom: 8px;
 }
 
+.card-heading {
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
 .card-content {
   padding: 10px;
 }
@@ -167,7 +165,7 @@ body {
 .card-desc {
   line-height: 1.6;
   color: #636b6f;
-  font-size: 17px;
+  font-size: 13px;
   margin: 0;
   font-weight: 400;
   font-family: "DM Sans", sans-serif;
@@ -306,12 +304,12 @@ body {
 
 .card-item-title {
   font-weight: 500;
-  font-size: 22px;
+  font-size: 20px;
   margin-bottom: 5px;
 }
 
 .card-item-desc {
-  font-size: 20px;
+  font-size: 15px;
   color: #6f6f7b;
   line-height: 1.5;
   font-family: "DM Sans", sans-serif;
