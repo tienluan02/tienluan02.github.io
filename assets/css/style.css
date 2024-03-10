@@ -35,9 +35,9 @@
   height: 500px;
 }
 
-.card[data-state="#experience"] {
+/* .card[data-state="#experience"] {
   height: 500px;
-}
+} */
 
 .card.is-active .card-header {
   height: 100px;
@@ -353,6 +353,22 @@
   margin-top: 25px;
   cursor: pointer;
   font-size: 20px;
+  font-weight: 500;
+  font-family: "Jost", sans-serif;
+  transition: 0.3s;
+}
+
+.demo-game {
+  border: 5px;
+  background: linear-gradient(to right, rgba(83, 200, 239, 0.8) 0%, rgba(81, 106, 204, 0.8) 96%);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  color: #040404;
+  padding: 5px 10px;
+  width: 30%;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 10px;
   font-weight: 500;
   font-family: "Jost", sans-serif;
   transition: 0.3s;
