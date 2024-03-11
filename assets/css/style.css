@@ -31,7 +31,7 @@
   width: 400px;
 }
 
-.card[data-state="#contact"].card.is-active .card-fullname {
+/* .card[data-state="#contact"].card.is-active .card-fullname {
   left: 110px;
   transform: none;
   bottom: 25px;
@@ -43,7 +43,7 @@
   transform: none;
   bottom: 20px;
   font-size: 18px;
-}
+} */
 
 .card[data-state="#skills"] {
   height: 500px;
