@@ -35,12 +35,12 @@
   left: 110px;
   transform: none;
   bottom: 25px;
-  font-size: 18px;
+  font-size: 30px;
 }
 
 @media (max-width: 600px) {
   .card.is-active .card-fullname {
-    font-size: 15px;
+    font-size: 18px;
   }
   .card.is-active .card-jobtitle {
     font-size: 10px;
