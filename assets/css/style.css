@@ -20,7 +20,7 @@
 
 .card[data-state="#about"] {
   height: 500px;
-  width: 380px;
+  width: 400px;
 }
 .card[data-state="#about"] .card-main {
   padding-top: 0;
@@ -207,6 +207,7 @@
   align-items: center;
   padding: 0 20px;
   margin-bottom: 30px;
+  margin-left: -15px;
 }
 .card-social svg {
   fill: #a5b5ce;
@@ -225,12 +226,20 @@
   background-color: rgba(93, 133, 193, 0.05);
   border-radius: 50%;
   margin-right: 10px;
+  margin-bottom: -34px;
 }
 .card-social a:hover svg {
   fill: #637faa;
 }
 .card-social a:last-child {
   margin-right: 0;
+}
+
+.social-subtitle {
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 5px;
 }
 
 /* project */
@@ -306,6 +315,12 @@
 
 /* skills */
 
+.skill-subtitle {
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: -10px;
+}
+
 .skill-container {
   background: var(--border-gradient-onyx);
   padding: 10px;
@@ -313,6 +328,7 @@
   box-shadow: var(--shadow-2);
   cursor: pointer;
   z-index: 1;
+  margin-top: -25px;
 }
 .skill {
   margin: 20px 0;
@@ -345,8 +361,8 @@
   padding: 10px;
   border-radius: 14px;
   box-shadow: var(--shadow-2);
-  cursor: pointer;
   z-index: 1;
+  margin-top: -25px;
 }
 .experience {
   margin: 20px 0;
@@ -365,8 +381,22 @@
   height: 100%;
   background-color: rgba(83, 200, 239, 0.8);
   border-radius: inherit;
+  animation: movePercentage 2s infinite alternate;
 }
 
+@keyframes movePercentage {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+.experience-percentage-exactly {
+  height: 100%;
+  background-color: rgba(83, 200, 239, 0.8);
+  border-radius: inherit;
+}
 .content-card {
   position: relative;
   padding: 10px;
